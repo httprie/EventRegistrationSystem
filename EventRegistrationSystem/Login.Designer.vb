@@ -33,6 +33,7 @@ Partial Class Login
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.lbluserlogin = New System.Windows.Forms.Label()
         Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.txtpw = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtun = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -128,13 +129,27 @@ Partial Class Login
         Me.lbluserlogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.lbluserlogin.Location = New System.Drawing.Point(653, 111)
         Me.lbluserlogin.Name = "lbluserlogin"
-        Me.lbluserlogin.Size = New System.Drawing.Size(191, 46)
+        Me.lbluserlogin.Size = New System.Drawing.Size(129, 31)
         Me.lbluserlogin.TabIndex = 10
         Me.lbluserlogin.Text = "User Login"
         '
         'Guna2AnimateWindow1
         '
         Me.Guna2AnimateWindow1.TargetForm = Me
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.Location = New System.Drawing.Point(640, 435)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(214, 46)
+        Me.Guna2Button1.TabIndex = 11
+        Me.Guna2Button1.Text = "TRY LANG SA ISANG FORM "
         '
         'txtpw
         '
@@ -204,6 +219,7 @@ Partial Class Login
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(995, 625)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.lbluserlogin)
         Me.Controls.Add(Me.Guna2ControlBox2)
         Me.Controls.Add(Me.Guna2ControlBox1)
@@ -238,4 +254,5 @@ Partial Class Login
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
     Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
 End Class
