@@ -108,7 +108,7 @@ Partial Class adminHome
         Me.Guna2Button6.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button6.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button6.Image = Global.EventRegistrationSystem.My.Resources.Resources.round_removebg_preview
+        Me.Guna2Button6.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_select_users_96
         Me.Guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button6.ImageOffset = New System.Drawing.Point(20, 0)
         Me.Guna2Button6.ImageSize = New System.Drawing.Size(30, 30)
@@ -131,7 +131,7 @@ Partial Class adminHome
         Me.Guna2Button5.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button5.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button5.Image = Global.EventRegistrationSystem.My.Resources.Resources.round_removebg_preview
+        Me.Guna2Button5.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_report_96
         Me.Guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button5.ImageOffset = New System.Drawing.Point(20, 0)
         Me.Guna2Button5.ImageSize = New System.Drawing.Size(30, 30)
@@ -154,7 +154,7 @@ Partial Class adminHome
         Me.Guna2Button3.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Image = Global.EventRegistrationSystem.My.Resources.Resources.round_removebg_preview
+        Me.Guna2Button3.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_events_96
         Me.Guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button3.ImageOffset = New System.Drawing.Point(20, 0)
         Me.Guna2Button3.ImageSize = New System.Drawing.Size(30, 30)
@@ -177,7 +177,7 @@ Partial Class adminHome
         Me.Guna2Button4.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.Image = Global.EventRegistrationSystem.My.Resources.Resources.round_removebg_preview
+        Me.Guna2Button4.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_student_registration_96
         Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button4.ImageOffset = New System.Drawing.Point(20, 0)
         Me.Guna2Button4.ImageSize = New System.Drawing.Size(30, 30)
@@ -200,12 +200,13 @@ Partial Class adminHome
         Me.Guna2Button2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Image = Global.EventRegistrationSystem.My.Resources.Resources.round_removebg_preview
+        Me.Guna2Button2.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_attendance_96
         Me.Guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2Button2.ImageOffset = New System.Drawing.Point(20, 0)
         Me.Guna2Button2.ImageSize = New System.Drawing.Size(30, 30)
         Me.Guna2Button2.Location = New System.Drawing.Point(-22, 214)
         Me.Guna2Button2.Name = "Guna2Button2"
+        Me.Guna2Button2.PressedColor = System.Drawing.Color.White
         Me.Guna2Button2.Size = New System.Drawing.Size(290, 45)
         Me.Guna2Button2.TabIndex = 10
         Me.Guna2Button2.Text = "ATTENDANCE"
