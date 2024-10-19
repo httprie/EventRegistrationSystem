@@ -222,5 +222,20 @@
   <ItemGroup>
     <None Include="Resources\user white.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-attendance-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-registration-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-events-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-select-users-96.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
