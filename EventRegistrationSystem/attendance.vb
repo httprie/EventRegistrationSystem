@@ -7,7 +7,7 @@ Public Class attendance
     Private qrReader As New ZXing.BarcodeReader()
 
     Private Sub Attendance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Timer1.Enabled = True
         pbwebcam.SizeMode = PictureBoxSizeMode.Zoom
         StartWebcam()
     End Sub
@@ -95,5 +95,11 @@ Public Class attendance
         Else
             MessageBox.Show("No image to scan.")
         End If
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim s As String
+        s = Date.Now.ToString()
+        timedate.Text = s
     End Sub
 End Class

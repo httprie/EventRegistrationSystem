@@ -36,6 +36,8 @@ Partial Class Login
         Me.txtpw = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtun = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.timedate = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -126,7 +128,7 @@ Partial Class Login
         Me.lbluserlogin.AutoSize = True
         Me.lbluserlogin.Font = New System.Drawing.Font("Segoe UI", 17.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbluserlogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lbluserlogin.Location = New System.Drawing.Point(653, 111)
+        Me.lbluserlogin.Location = New System.Drawing.Point(685, 110)
         Me.lbluserlogin.Name = "lbluserlogin"
         Me.lbluserlogin.Size = New System.Drawing.Size(191, 46)
         Me.lbluserlogin.TabIndex = 10
@@ -198,12 +200,27 @@ Partial Class Login
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
         '
+        'timedate
+        '
+        Me.timedate.AutoSize = True
+        Me.timedate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.timedate.Location = New System.Drawing.Point(463, 16)
+        Me.timedate.Name = "timedate"
+        Me.timedate.Size = New System.Drawing.Size(127, 25)
+        Me.timedate.TabIndex = 11
+        Me.timedate.Text = "                       "
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
         'Login
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(995, 625)
         Me.ControlBox = False
+        Me.Controls.Add(Me.timedate)
         Me.Controls.Add(Me.lbluserlogin)
         Me.Controls.Add(Me.Guna2ControlBox2)
         Me.Controls.Add(Me.Guna2ControlBox1)
@@ -238,4 +255,6 @@ Partial Class Login
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
     Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
+    Friend WithEvents timedate As Label
+    Friend WithEvents Timer1 As Timer
 End Class

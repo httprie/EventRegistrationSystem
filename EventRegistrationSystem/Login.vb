@@ -4,6 +4,7 @@ Public Class Login
     Dim password As String
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AcceptButton = btnLogin
+        Timer1.Enabled = True
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
@@ -26,5 +27,11 @@ Public Class Login
         Else
             txtpw.PasswordChar = "*"
         End If
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim s As String
+        s = Date.Now.ToString()
+        timedate.Text = s
     End Sub
 End Class

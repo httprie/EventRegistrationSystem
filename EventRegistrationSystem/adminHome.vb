@@ -1,4 +1,5 @@
-﻿Public Class adminHome
+﻿Imports System.Windows.Forms.DataVisualization.Charting
+Public Class adminHome
     Sub childform(ByVal panel As Form)
         pnlhome.Controls.Clear()
         panel.TopLevel = False
@@ -29,5 +30,24 @@
 
     Private Sub btnexit_Click(sender As Object, e As EventArgs) Handles btnexit.Click
         End
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim s As String
+        s = Date.Now.ToString()
+        timedate.Text = s
+    End Sub
+
+    Private Sub adminHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Timer1.Enabled = True
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Chart1_Click(sender As Object, e As EventArgs) Handles Chart1.Click
+        Dim series1 As Series = Chart1.Series("Series 1")
+        series1.ChartType = SeriesChartType.Pie
     End Sub
 End Class

@@ -70,4 +70,14 @@ Public Class generate
 
 
     End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim s As String
+        s = Date.Now.ToString()
+        timedate.Text = s
+    End Sub
+
+    Private Sub generate_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Timer1.Enabled = True
+    End Sub
 End Class

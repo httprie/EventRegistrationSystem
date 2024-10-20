@@ -39,6 +39,8 @@ Partial Class generate
         Me.txtstudID = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.txtemail = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.timedate = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.QRCode, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -273,11 +275,26 @@ Partial Class generate
         Me.txtemail.Size = New System.Drawing.Size(442, 27)
         Me.txtemail.TabIndex = 23
         '
+        'timedate
+        '
+        Me.timedate.AutoSize = True
+        Me.timedate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.timedate.ForeColor = System.Drawing.Color.White
+        Me.timedate.Location = New System.Drawing.Point(29, 9)
+        Me.timedate.Name = "timedate"
+        Me.timedate.Size = New System.Drawing.Size(127, 25)
+        Me.timedate.TabIndex = 24
+        Me.timedate.Text = "                       "
+        '
+        'Timer1
+        '
+        '
         'generate
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(753, 629)
+        Me.Controls.Add(Me.timedate)
         Me.Controls.Add(Me.txtemail)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.txtstudID)
@@ -316,4 +333,6 @@ Partial Class generate
     Friend WithEvents Label5 As Label
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtemail As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents timedate As Label
+    Friend WithEvents Timer1 As Timer
 End Class
