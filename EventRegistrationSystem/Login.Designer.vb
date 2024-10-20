@@ -68,7 +68,7 @@ Partial Class Login
         Me.lblremember.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblremember.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblremember.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lblremember.Location = New System.Drawing.Point(627, 308)
+        Me.lblremember.Location = New System.Drawing.Point(627, 318)
         Me.lblremember.Name = "lblremember"
         Me.lblremember.Size = New System.Drawing.Size(163, 30)
         Me.lblremember.TabIndex = 6

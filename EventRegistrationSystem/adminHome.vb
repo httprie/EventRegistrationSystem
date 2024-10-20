@@ -6,19 +6,28 @@
         panel.Show()
     End Sub
 
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+    Private Sub btnattendance_Click(sender As Object, e As EventArgs) Handles btnattendance.Click
         childform(New attendance())
     End Sub
 
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+    Private Sub btnstudent_Click(sender As Object, e As EventArgs) Handles btnstudent.Click
         childform(New generate())
     End Sub
 
-    Private Sub Guna2Button7_Click(sender As Object, e As EventArgs) Handles Guna2Button7.Click
+    Private Sub bntlogout_Click(sender As Object, e As EventArgs) Handles btnlogout.Click
         Dim result As DialogResult
         result = MessageBox.Show("Do you really want to log out this account?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
             Dispose()
         End If
+        End
+    End Sub
+
+    Private Sub btnreport_Click(sender As Object, e As EventArgs) Handles btnreport.Click
+
+    End Sub
+
+    Private Sub btnexit_Click(sender As Object, e As EventArgs) Handles btnexit.Click
+        End
     End Sub
 End Class
