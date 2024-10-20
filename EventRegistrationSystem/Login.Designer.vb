@@ -128,7 +128,7 @@ Partial Class Login
         Me.lbluserlogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.lbluserlogin.Location = New System.Drawing.Point(653, 111)
         Me.lbluserlogin.Name = "lbluserlogin"
-        Me.lbluserlogin.Size = New System.Drawing.Size(129, 31)
+        Me.lbluserlogin.Size = New System.Drawing.Size(191, 46)
         Me.lbluserlogin.TabIndex = 10
         Me.lbluserlogin.Text = "User Login"
         '

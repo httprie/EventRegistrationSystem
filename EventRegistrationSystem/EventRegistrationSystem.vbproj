@@ -115,6 +115,12 @@
     <Compile Include="attendance.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EmailForm.Designer.vb">
+      <DependentUpon>EmailForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmailForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="generate.Designer.vb">
       <DependentUpon>generate.vb</DependentUpon>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="attendance.resx">
       <DependentUpon>attendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailForm.resx">
+      <DependentUpon>EmailForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generate.resx">
       <DependentUpon>generate.vb</DependentUpon>

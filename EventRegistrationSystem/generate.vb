@@ -8,6 +8,7 @@ Public Class generate
         Dim course As String = txtcourse.Text
         Dim yrsec As String = txtyrsec.Text
         Dim studID As String = txtstudID.Text
+        Dim email As String = txtemail.Text
 
         If String.IsNullOrWhiteSpace(fullname) OrElse String.IsNullOrWhiteSpace(course) OrElse String.IsNullOrWhiteSpace(yrsec) OrElse String.IsNullOrWhiteSpace(studID) Then
             MessageBox.Show("Please fill in all fields.")
@@ -46,5 +47,27 @@ Public Class generate
                 MessageBox.Show("No QR Code Image to save.")
             End If
         End If
+    End Sub
+
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        Dim obj As New EmailForm
+
+        obj.email = txtemail.Text
+        obj.message = "Attendance QR Code" & vbCrLf &
+               "Name: " & txtname.Text & vbCrLf &
+               "Course: " & txtcourse.Text & vbCrLf &
+               "Year & Section: " & txtyrsec.Text & vbCrLf &
+               "Student ID: " & txtstudID.Text & vbCrLf & vbCrLf &
+               "Please present this at every event you attend. Thank you!"
+
+        obj.Show()
+        txtname.Clear()
+        txtcourse.Clear()
+        txtyrsec.Clear()
+        txtemail.Clear()
+        txtstudID.Clear()
+        QRCode.Hide()
+
+
     End Sub
 End Class

@@ -10,7 +10,7 @@ Public Class Login
         username = txtun.Text
         password = txtpw.Text
 
-        If username = "admin" And password = "admin" Then
+        If username = "1" And password = "1" Then
             Me.Hide()
             adminHome.Show()
         ElseIf username = "" Or password = "" Then
