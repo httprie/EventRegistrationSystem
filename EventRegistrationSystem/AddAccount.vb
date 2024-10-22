@@ -33,8 +33,8 @@ Public Class AddAccount
                 result = cmd.ExecuteNonQuery()
 
                 If result > 0 Then
-                    MessageBox.Show("Conformation:", "Do you really want to add this account?", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    MessageBox.Show("Success!", "Account Added!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MessageBox.Show("Do you really want to add this account?", "Conformation:", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MessageBox.Show("Account Added!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     ClearTextBoxes()
                 End If
             End With
