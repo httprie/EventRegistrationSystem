@@ -70,7 +70,7 @@ Partial Class Login
         Me.lblremember.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblremember.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblremember.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.lblremember.Location = New System.Drawing.Point(627, 318)
+        Me.lblremember.Location = New System.Drawing.Point(627, 317)
         Me.lblremember.Name = "lblremember"
         Me.lblremember.Size = New System.Drawing.Size(163, 30)
         Me.lblremember.TabIndex = 6
@@ -127,8 +127,8 @@ Partial Class Login
         '
         Me.lbluserlogin.AutoSize = True
         Me.lbluserlogin.Font = New System.Drawing.Font("Segoe UI", 17.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbluserlogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lbluserlogin.Location = New System.Drawing.Point(685, 110)
+        Me.lbluserlogin.ForeColor = System.Drawing.Color.Black
+        Me.lbluserlogin.Location = New System.Drawing.Point(674, 129)
         Me.lbluserlogin.Name = "lbluserlogin"
         Me.lbluserlogin.Size = New System.Drawing.Size(191, 46)
         Me.lbluserlogin.TabIndex = 10
