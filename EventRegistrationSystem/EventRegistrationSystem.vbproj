@@ -63,6 +63,9 @@
     <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -122,6 +125,18 @@
     <Compile Include="EmailForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Accounts.Designer.vb">
+      <DependentUpon>Accounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAccount.Designer.vb">
+      <DependentUpon>AddAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="generate.Designer.vb">
       <DependentUpon>generate.vb</DependentUpon>
     </Compile>
@@ -135,6 +150,7 @@
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="sql connection.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -160,6 +176,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmailForm.resx">
       <DependentUpon>EmailForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts.resx">
+      <DependentUpon>Accounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAccount.resx">
+      <DependentUpon>AddAccount.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generate.resx">
       <DependentUpon>generate.vb</DependentUpon>

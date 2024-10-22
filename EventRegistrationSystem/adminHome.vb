@@ -50,4 +50,8 @@ Public Class adminHome
         Dim series1 As Series = Chart1.Series("Series 1")
         series1.ChartType = SeriesChartType.Pie
     End Sub
+
+    Private Sub btnacc_Click(sender As Object, e As EventArgs) Handles btnacc.Click
+        childform(New Accounts())
+    End Sub
 End Class

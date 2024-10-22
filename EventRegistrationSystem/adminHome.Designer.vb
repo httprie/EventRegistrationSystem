@@ -23,25 +23,30 @@ Partial Class adminHome
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.btnlogout = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.pnlhome = New Guna.UI2.WinForms.Guna2Panel()
+        Me.data = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Student = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblwelcome = New System.Windows.Forms.Label()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.timedate = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2ControlBox3 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.btnexit = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btnacc = New Guna.UI2.WinForms.Guna2Button()
         Me.btnreport = New Guna.UI2.WinForms.Guna2Button()
         Me.btnevent = New Guna.UI2.WinForms.Guna2Button()
@@ -49,19 +54,14 @@ Partial Class adminHome
         Me.btnattendance = New Guna.UI2.WinForms.Guna2Button()
         Me.btnhome = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.data = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Student = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnlhome.SuspendLayout()
+        CType(Me.data, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.data, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Elipse1
@@ -111,6 +111,83 @@ Partial Class adminHome
         Me.pnlhome.Size = New System.Drawing.Size(753, 628)
         Me.pnlhome.TabIndex = 16
         '
+        'data
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.data.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.data.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.data.ColumnHeadersHeight = 22
+        Me.data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.data.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Student, Me.Column1, Me.Column2})
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.data.DefaultCellStyle = DataGridViewCellStyle3
+        Me.data.GridColor = System.Drawing.Color.Gainsboro
+        Me.data.Location = New System.Drawing.Point(399, 237)
+        Me.data.Name = "data"
+        Me.data.RowHeadersVisible = False
+        Me.data.RowHeadersWidth = 62
+        Me.data.RowTemplate.Height = 28
+        Me.data.Size = New System.Drawing.Size(346, 159)
+        Me.data.TabIndex = 25
+        Me.data.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.data.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.data.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.data.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.data.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.data.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.data.ThemeStyle.GridColor = System.Drawing.Color.Gainsboro
+        Me.data.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.data.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.data.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.data.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.data.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.data.ThemeStyle.HeaderStyle.Height = 22
+        Me.data.ThemeStyle.ReadOnly = False
+        Me.data.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.data.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.data.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.data.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.data.ThemeStyle.RowsStyle.Height = 28
+        Me.data.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.data.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'ID
+        '
+        Me.ID.HeaderText = "EVENT"
+        Me.ID.MinimumWidth = 8
+        Me.ID.Name = "ID"
+        '
+        'Student
+        '
+        Me.Student.HeaderText = "DATE"
+        Me.Student.MinimumWidth = 8
+        Me.Student.Name = "Student"
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "VENUE"
+        Me.Column1.MinimumWidth = 8
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "DEPT"
+        Me.Column2.MinimumWidth = 8
+        Me.Column2.Name = "Column2"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -119,7 +196,7 @@ Partial Class adminHome
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(144, 201)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(146, 32)
+        Me.Label1.Size = New System.Drawing.Size(98, 21)
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "Attendance"
         '
@@ -131,7 +208,7 @@ Partial Class adminHome
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(521, 201)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(164, 32)
+        Me.Label3.Size = New System.Drawing.Size(110, 21)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Events Today"
         '
@@ -142,7 +219,7 @@ Partial Class adminHome
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(297, 113)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(293, 32)
+        Me.Label2.Size = New System.Drawing.Size(197, 21)
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Event Registration System"
         '
@@ -153,7 +230,7 @@ Partial Class adminHome
         Me.lblwelcome.ForeColor = System.Drawing.Color.White
         Me.lblwelcome.Location = New System.Drawing.Point(305, 75)
         Me.lblwelcome.Name = "lblwelcome"
-        Me.lblwelcome.Size = New System.Drawing.Size(246, 38)
+        Me.lblwelcome.Size = New System.Drawing.Size(165, 25)
         Me.lblwelcome.TabIndex = 19
         Me.lblwelcome.Text = "Welcome, admin!"
         '
@@ -180,18 +257,9 @@ Partial Class adminHome
         Me.timedate.ForeColor = System.Drawing.Color.White
         Me.timedate.Location = New System.Drawing.Point(29, 8)
         Me.timedate.Name = "timedate"
-        Me.timedate.Size = New System.Drawing.Size(127, 25)
+        Me.timedate.Size = New System.Drawing.Size(76, 15)
         Me.timedate.TabIndex = 17
         Me.timedate.Text = "                       "
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.PictureBox1.Location = New System.Drawing.Point(19, 186)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(731, 47)
-        Me.PictureBox1.TabIndex = 23
-        Me.PictureBox1.TabStop = False
         '
         'Guna2ControlBox3
         '
@@ -213,6 +281,9 @@ Partial Class adminHome
         Me.btnexit.Name = "btnexit"
         Me.btnexit.Size = New System.Drawing.Size(31, 28)
         Me.btnexit.TabIndex = 12
+        '
+        'Timer1
+        '
         '
         'btnacc
         '
@@ -364,9 +435,6 @@ Partial Class adminHome
         Me.Guna2PictureBox1.TabIndex = 8
         Me.Guna2PictureBox1.TabStop = False
         '
-        'Timer1
-        '
-        '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.White
@@ -376,82 +444,14 @@ Partial Class adminHome
         Me.PictureBox2.TabIndex = 24
         Me.PictureBox2.TabStop = False
         '
-        'data
+        'PictureBox1
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.data.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.data.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.data.ColumnHeadersHeight = 22
-        Me.data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.data.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Student, Me.Column1, Me.Column2})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.data.DefaultCellStyle = DataGridViewCellStyle3
-        Me.data.GridColor = System.Drawing.Color.Gainsboro
-        Me.data.Location = New System.Drawing.Point(399, 237)
-        Me.data.Name = "data"
-        Me.data.RowHeadersVisible = False
-        Me.data.RowHeadersWidth = 62
-        Me.data.RowTemplate.Height = 28
-        Me.data.Size = New System.Drawing.Size(346, 159)
-        Me.data.TabIndex = 25
-        Me.data.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.data.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.data.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.data.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.data.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.data.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.data.ThemeStyle.GridColor = System.Drawing.Color.Gainsboro
-        Me.data.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.data.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.data.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.data.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.data.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.data.ThemeStyle.HeaderStyle.Height = 22
-        Me.data.ThemeStyle.ReadOnly = False
-        Me.data.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.data.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.data.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.data.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.data.ThemeStyle.RowsStyle.Height = 28
-        Me.data.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.data.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'ID
-        '
-        Me.ID.HeaderText = "EVENT"
-        Me.ID.MinimumWidth = 8
-        Me.ID.Name = "ID"
-        '
-        'Student
-        '
-        Me.Student.HeaderText = "DATE"
-        Me.Student.MinimumWidth = 8
-        Me.Student.Name = "Student"
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "VENUE"
-        Me.Column1.MinimumWidth = 8
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "DEPT"
-        Me.Column2.MinimumWidth = 8
-        Me.Column2.Name = "Column2"
+        Me.PictureBox1.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 186)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(731, 47)
+        Me.PictureBox1.TabIndex = 23
+        Me.PictureBox1.TabStop = False
         '
         'adminHome
         '
@@ -476,11 +476,11 @@ Partial Class adminHome
         Me.Text = "adminHome"
         Me.pnlhome.ResumeLayout(False)
         Me.pnlhome.PerformLayout()
+        CType(Me.data, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.data, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
