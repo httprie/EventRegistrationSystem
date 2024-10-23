@@ -15,6 +15,22 @@ Public Class adminHome
         childform(New generate())
     End Sub
 
+    Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
+        childform(New generate())
+    End Sub
+
+    ' Declare a variable to hold the reference of eventsForm
+    Private eventsFormInstance As eventsForm
+
+    Private Sub btnevent_Click(sender As Object, e As EventArgs) Handles btnevent.Click
+        ' Create an instance of eventsForm
+        eventsFormInstance = New eventsForm()
+
+        ' Load eventsForm as a childform in the panel
+        childform(eventsFormInstance)
+    End Sub
+
+
     Private Sub bntlogout_Click(sender As Object, e As EventArgs) Handles btnlogout.Click
         Dim result As DialogResult
         result = MessageBox.Show("Do you really want to log out this account?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -22,10 +38,6 @@ Public Class adminHome
             Dispose()
         End If
         End
-    End Sub
-
-    Private Sub btnreport_Click(sender As Object, e As EventArgs) Handles btnreport.Click
-
     End Sub
 
     Private Sub btnexit_Click(sender As Object, e As EventArgs) Handles btnexit.Click
@@ -42,12 +54,9 @@ Public Class adminHome
         Timer1.Enabled = True
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
     Private Sub Chart1_Click(sender As Object, e As EventArgs) Handles Chart1.Click
         Dim series1 As Series = Chart1.Series("Series 1")
         series1.ChartType = SeriesChartType.Pie
     End Sub
+
 End Class

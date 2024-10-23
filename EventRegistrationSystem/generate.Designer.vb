@@ -51,7 +51,7 @@ Partial Class generate
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(105, 458)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(105, 25)
+        Me.Label1.Size = New System.Drawing.Size(85, 20)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Student ID:"
         '
@@ -62,7 +62,7 @@ Partial Class generate
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(134, 321)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 25)
+        Me.Label2.Size = New System.Drawing.Size(54, 20)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Name:"
         '
@@ -73,7 +73,7 @@ Partial Class generate
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(77, 414)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(153, 25)
+        Me.Label3.Size = New System.Drawing.Size(127, 20)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Year and Section:"
         '
@@ -84,7 +84,7 @@ Partial Class generate
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(126, 366)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(74, 25)
+        Me.Label4.Size = New System.Drawing.Size(60, 20)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Course:"
         '
@@ -144,7 +144,7 @@ Partial Class generate
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(134, 506)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 25)
+        Me.Label5.Size = New System.Drawing.Size(50, 20)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Email:"
         '
@@ -282,9 +282,9 @@ Partial Class generate
         Me.timedate.ForeColor = System.Drawing.Color.White
         Me.timedate.Location = New System.Drawing.Point(29, 9)
         Me.timedate.Name = "timedate"
-        Me.timedate.Size = New System.Drawing.Size(127, 25)
+        Me.timedate.Size = New System.Drawing.Size(97, 20)
         Me.timedate.TabIndex = 24
-        Me.timedate.Text = "                       "
+        Me.timedate.Text = "                      "
         '
         'Timer1
         '

@@ -23,16 +23,22 @@ Partial Class adminHome
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.btnlogout = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.pnlhome = New Guna.UI2.WinForms.Guna2Panel()
+        Me.data = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Student = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -42,6 +48,9 @@ Partial Class adminHome
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2ControlBox3 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.btnexit = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.btnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.btnacc = New Guna.UI2.WinForms.Guna2Button()
         Me.btnreport = New Guna.UI2.WinForms.Guna2Button()
         Me.btnevent = New Guna.UI2.WinForms.Guna2Button()
@@ -49,19 +58,14 @@ Partial Class adminHome
         Me.btnattendance = New Guna.UI2.WinForms.Guna2Button()
         Me.btnhome = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.data = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Student = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.pnlhome.SuspendLayout()
+        CType(Me.data, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.data, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Elipse1
@@ -111,294 +115,29 @@ Partial Class adminHome
         Me.pnlhome.Size = New System.Drawing.Size(753, 628)
         Me.pnlhome.TabIndex = 16
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(144, 201)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(146, 32)
-        Me.Label1.TabIndex = 21
-        Me.Label1.Text = "Attendance"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(521, 201)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(164, 32)
-        Me.Label3.TabIndex = 22
-        Me.Label3.Text = "Events Today"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(297, 113)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(293, 32)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "Event Registration System"
-        '
-        'lblwelcome
-        '
-        Me.lblwelcome.AutoSize = True
-        Me.lblwelcome.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblwelcome.ForeColor = System.Drawing.Color.White
-        Me.lblwelcome.Location = New System.Drawing.Point(305, 75)
-        Me.lblwelcome.Name = "lblwelcome"
-        Me.lblwelcome.Size = New System.Drawing.Size(246, 38)
-        Me.lblwelcome.TabIndex = 19
-        Me.lblwelcome.Text = "Welcome, admin!"
-        '
-        'Chart1
-        '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(60, 316)
-        Me.Chart1.Name = "Chart1"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(271, 249)
-        Me.Chart1.TabIndex = 18
-        Me.Chart1.Text = "Chart1"
-        '
-        'timedate
-        '
-        Me.timedate.AutoSize = True
-        Me.timedate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.timedate.ForeColor = System.Drawing.Color.White
-        Me.timedate.Location = New System.Drawing.Point(29, 8)
-        Me.timedate.Name = "timedate"
-        Me.timedate.Size = New System.Drawing.Size(127, 25)
-        Me.timedate.TabIndex = 17
-        Me.timedate.Text = "                       "
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.PictureBox1.Location = New System.Drawing.Point(19, 186)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(731, 47)
-        Me.PictureBox1.TabIndex = 23
-        Me.PictureBox1.TabStop = False
-        '
-        'Guna2ControlBox3
-        '
-        Me.Guna2ControlBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
-        Me.Guna2ControlBox3.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2ControlBox3.IconColor = System.Drawing.Color.DimGray
-        Me.Guna2ControlBox3.Location = New System.Drawing.Point(924, 1)
-        Me.Guna2ControlBox3.Name = "Guna2ControlBox3"
-        Me.Guna2ControlBox3.Size = New System.Drawing.Size(31, 28)
-        Me.Guna2ControlBox3.TabIndex = 13
-        '
-        'btnexit
-        '
-        Me.btnexit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnexit.FillColor = System.Drawing.Color.Transparent
-        Me.btnexit.IconColor = System.Drawing.Color.DimGray
-        Me.btnexit.Location = New System.Drawing.Point(952, 1)
-        Me.btnexit.Name = "btnexit"
-        Me.btnexit.Size = New System.Drawing.Size(31, 28)
-        Me.btnexit.TabIndex = 12
-        '
-        'btnacc
-        '
-        Me.btnacc.BackColor = System.Drawing.Color.Transparent
-        Me.btnacc.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnacc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnacc.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnacc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnacc.FillColor = System.Drawing.Color.Transparent
-        Me.btnacc.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnacc.ForeColor = System.Drawing.Color.White
-        Me.btnacc.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_select_users_96
-        Me.btnacc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnacc.ImageOffset = New System.Drawing.Point(20, 0)
-        Me.btnacc.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnacc.Location = New System.Drawing.Point(-22, 418)
-        Me.btnacc.Name = "btnacc"
-        Me.btnacc.Size = New System.Drawing.Size(290, 45)
-        Me.btnacc.TabIndex = 14
-        Me.btnacc.Text = "ACCOUNTS"
-        Me.btnacc.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnacc.TextOffset = New System.Drawing.Point(40, 0)
-        Me.btnacc.UseTransparentBackground = True
-        '
-        'btnreport
-        '
-        Me.btnreport.BackColor = System.Drawing.Color.Transparent
-        Me.btnreport.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnreport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnreport.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnreport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnreport.FillColor = System.Drawing.Color.Transparent
-        Me.btnreport.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnreport.ForeColor = System.Drawing.Color.White
-        Me.btnreport.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_report_96
-        Me.btnreport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnreport.ImageOffset = New System.Drawing.Point(20, 0)
-        Me.btnreport.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnreport.Location = New System.Drawing.Point(-22, 367)
-        Me.btnreport.Name = "btnreport"
-        Me.btnreport.Size = New System.Drawing.Size(290, 45)
-        Me.btnreport.TabIndex = 13
-        Me.btnreport.Text = "REPORTS"
-        Me.btnreport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnreport.TextOffset = New System.Drawing.Point(40, 0)
-        Me.btnreport.UseTransparentBackground = True
-        '
-        'btnevent
-        '
-        Me.btnevent.BackColor = System.Drawing.Color.Transparent
-        Me.btnevent.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnevent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnevent.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnevent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnevent.FillColor = System.Drawing.Color.Transparent
-        Me.btnevent.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnevent.ForeColor = System.Drawing.Color.White
-        Me.btnevent.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_events_96
-        Me.btnevent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnevent.ImageOffset = New System.Drawing.Point(20, 0)
-        Me.btnevent.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnevent.Location = New System.Drawing.Point(-22, 316)
-        Me.btnevent.Name = "btnevent"
-        Me.btnevent.Size = New System.Drawing.Size(290, 45)
-        Me.btnevent.TabIndex = 12
-        Me.btnevent.Text = "EVENTS"
-        Me.btnevent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnevent.TextOffset = New System.Drawing.Point(40, 0)
-        Me.btnevent.UseTransparentBackground = True
-        '
-        'btnstudent
-        '
-        Me.btnstudent.BackColor = System.Drawing.Color.Transparent
-        Me.btnstudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnstudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnstudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnstudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnstudent.FillColor = System.Drawing.Color.Transparent
-        Me.btnstudent.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnstudent.ForeColor = System.Drawing.Color.White
-        Me.btnstudent.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_student_registration_96
-        Me.btnstudent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnstudent.ImageOffset = New System.Drawing.Point(20, 0)
-        Me.btnstudent.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnstudent.Location = New System.Drawing.Point(-22, 265)
-        Me.btnstudent.Name = "btnstudent"
-        Me.btnstudent.Size = New System.Drawing.Size(290, 45)
-        Me.btnstudent.TabIndex = 11
-        Me.btnstudent.Text = "STUDENT"
-        Me.btnstudent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnstudent.TextOffset = New System.Drawing.Point(40, 0)
-        Me.btnstudent.UseTransparentBackground = True
-        '
-        'btnattendance
-        '
-        Me.btnattendance.BackColor = System.Drawing.Color.Transparent
-        Me.btnattendance.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnattendance.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnattendance.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnattendance.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnattendance.FillColor = System.Drawing.Color.Transparent
-        Me.btnattendance.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnattendance.ForeColor = System.Drawing.Color.White
-        Me.btnattendance.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_attendance_96
-        Me.btnattendance.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnattendance.ImageOffset = New System.Drawing.Point(20, 0)
-        Me.btnattendance.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnattendance.Location = New System.Drawing.Point(-22, 214)
-        Me.btnattendance.Name = "btnattendance"
-        Me.btnattendance.PressedColor = System.Drawing.Color.White
-        Me.btnattendance.Size = New System.Drawing.Size(290, 45)
-        Me.btnattendance.TabIndex = 10
-        Me.btnattendance.Text = "ATTENDANCE"
-        Me.btnattendance.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnattendance.TextOffset = New System.Drawing.Point(40, 0)
-        Me.btnattendance.UseTransparentBackground = True
-        '
-        'btnhome
-        '
-        Me.btnhome.BackColor = System.Drawing.Color.Transparent
-        Me.btnhome.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnhome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnhome.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnhome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnhome.FillColor = System.Drawing.Color.Transparent
-        Me.btnhome.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnhome.ForeColor = System.Drawing.Color.White
-        Me.btnhome.Image = Global.EventRegistrationSystem.My.Resources.Resources.round_removebg_preview
-        Me.btnhome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnhome.ImageOffset = New System.Drawing.Point(20, 0)
-        Me.btnhome.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnhome.Location = New System.Drawing.Point(-22, 163)
-        Me.btnhome.Name = "btnhome"
-        Me.btnhome.Size = New System.Drawing.Size(290, 45)
-        Me.btnhome.TabIndex = 9
-        Me.btnhome.Text = "HOME"
-        Me.btnhome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.btnhome.TextOffset = New System.Drawing.Point(40, 0)
-        Me.btnhome.UseTransparentBackground = True
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2PictureBox1.Image = Global.EventRegistrationSystem.My.Resources.Resources.menu_bg
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(268, 625)
-        Me.Guna2PictureBox1.TabIndex = 8
-        Me.Guna2PictureBox1.TabStop = False
-        '
-        'Timer1
-        '
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.White
-        Me.PictureBox2.Location = New System.Drawing.Point(396, 186)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(5, 456)
-        Me.PictureBox2.TabIndex = 24
-        Me.PictureBox2.TabStop = False
-        '
         'data
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.data.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.data.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.data.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.data.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.data.ColumnHeadersHeight = 22
         Me.data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.data.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Student, Me.Column1, Me.Column2})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.data.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.data.DefaultCellStyle = DataGridViewCellStyle6
         Me.data.GridColor = System.Drawing.Color.Gainsboro
         Me.data.Location = New System.Drawing.Point(399, 237)
         Me.data.Name = "data"
@@ -453,12 +192,329 @@ Partial Class adminHome
         Me.Column2.MinimumWidth = 8
         Me.Column2.Name = "Column2"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.White
+        Me.PictureBox2.Location = New System.Drawing.Point(396, 186)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(5, 456)
+        Me.PictureBox2.TabIndex = 24
+        Me.PictureBox2.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.MidnightBlue
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(144, 201)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(121, 28)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "Attendance"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.MidnightBlue
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(521, 201)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(136, 28)
+        Me.Label3.TabIndex = 22
+        Me.Label3.Text = "Events Today"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(297, 113)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(243, 28)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "Event Registration System"
+        '
+        'lblwelcome
+        '
+        Me.lblwelcome.AutoSize = True
+        Me.lblwelcome.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblwelcome.ForeColor = System.Drawing.Color.White
+        Me.lblwelcome.Location = New System.Drawing.Point(305, 75)
+        Me.lblwelcome.Name = "lblwelcome"
+        Me.lblwelcome.Size = New System.Drawing.Size(214, 32)
+        Me.lblwelcome.TabIndex = 19
+        Me.lblwelcome.Text = "Welcome, admin!"
+        '
+        'Chart1
+        '
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend2)
+        Me.Chart1.Location = New System.Drawing.Point(60, 316)
+        Me.Chart1.Name = "Chart1"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.Chart1.Series.Add(Series2)
+        Me.Chart1.Size = New System.Drawing.Size(271, 249)
+        Me.Chart1.TabIndex = 18
+        Me.Chart1.Text = "Chart1"
+        '
+        'timedate
+        '
+        Me.timedate.AutoSize = True
+        Me.timedate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.timedate.ForeColor = System.Drawing.Color.White
+        Me.timedate.Location = New System.Drawing.Point(29, 8)
+        Me.timedate.Name = "timedate"
+        Me.timedate.Size = New System.Drawing.Size(101, 20)
+        Me.timedate.TabIndex = 17
+        Me.timedate.Text = "                       "
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 186)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(731, 47)
+        Me.PictureBox1.TabIndex = 23
+        Me.PictureBox1.TabStop = False
+        '
+        'Guna2ControlBox3
+        '
+        Me.Guna2ControlBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
+        Me.Guna2ControlBox3.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2ControlBox3.IconColor = System.Drawing.Color.DimGray
+        Me.Guna2ControlBox3.Location = New System.Drawing.Point(924, 1)
+        Me.Guna2ControlBox3.Name = "Guna2ControlBox3"
+        Me.Guna2ControlBox3.Size = New System.Drawing.Size(31, 28)
+        Me.Guna2ControlBox3.TabIndex = 13
+        '
+        'btnexit
+        '
+        Me.btnexit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnexit.FillColor = System.Drawing.Color.Transparent
+        Me.btnexit.IconColor = System.Drawing.Color.DimGray
+        Me.btnexit.Location = New System.Drawing.Point(952, 1)
+        Me.btnexit.Name = "btnexit"
+        Me.btnexit.Size = New System.Drawing.Size(31, 28)
+        Me.btnexit.TabIndex = 12
+        '
+        'Timer1
+        '
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Guna2PictureBox2.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(81, Byte), Integer))
+        Me.Guna2PictureBox2.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_user_96
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.InitialImage = Nothing
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(78, 75)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(94, 97)
+        Me.Guna2PictureBox2.TabIndex = 18
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'btnMenu
+        '
+        Me.btnMenu.BackColor = System.Drawing.Color.Transparent
+        Me.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnMenu.FillColor = System.Drawing.Color.Transparent
+        Me.btnMenu.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnMenu.ForeColor = System.Drawing.Color.White
+        Me.btnMenu.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_menu_96
+        Me.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnMenu.ImageOffset = New System.Drawing.Point(20, 0)
+        Me.btnMenu.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnMenu.Location = New System.Drawing.Point(-22, 12)
+        Me.btnMenu.Name = "btnMenu"
+        Me.btnMenu.Size = New System.Drawing.Size(290, 45)
+        Me.btnMenu.TabIndex = 17
+        Me.btnMenu.Text = "MENU"
+        Me.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnMenu.TextOffset = New System.Drawing.Point(40, 0)
+        Me.btnMenu.UseTransparentBackground = True
+        '
+        'btnacc
+        '
+        Me.btnacc.BackColor = System.Drawing.Color.Transparent
+        Me.btnacc.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnacc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnacc.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnacc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnacc.FillColor = System.Drawing.Color.Transparent
+        Me.btnacc.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnacc.ForeColor = System.Drawing.Color.White
+        Me.btnacc.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_select_users_96
+        Me.btnacc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnacc.ImageOffset = New System.Drawing.Point(20, 0)
+        Me.btnacc.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnacc.Location = New System.Drawing.Point(-22, 492)
+        Me.btnacc.Name = "btnacc"
+        Me.btnacc.Size = New System.Drawing.Size(290, 45)
+        Me.btnacc.TabIndex = 14
+        Me.btnacc.Text = "ACCOUNTS"
+        Me.btnacc.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnacc.TextOffset = New System.Drawing.Point(40, 0)
+        Me.btnacc.UseTransparentBackground = True
+        '
+        'btnreport
+        '
+        Me.btnreport.BackColor = System.Drawing.Color.Transparent
+        Me.btnreport.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnreport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnreport.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnreport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnreport.FillColor = System.Drawing.Color.Transparent
+        Me.btnreport.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnreport.ForeColor = System.Drawing.Color.White
+        Me.btnreport.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_report_96
+        Me.btnreport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnreport.ImageOffset = New System.Drawing.Point(20, 0)
+        Me.btnreport.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnreport.Location = New System.Drawing.Point(-22, 441)
+        Me.btnreport.Name = "btnreport"
+        Me.btnreport.Size = New System.Drawing.Size(290, 45)
+        Me.btnreport.TabIndex = 13
+        Me.btnreport.Text = "REPORTS"
+        Me.btnreport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnreport.TextOffset = New System.Drawing.Point(40, 0)
+        Me.btnreport.UseTransparentBackground = True
+        '
+        'btnevent
+        '
+        Me.btnevent.BackColor = System.Drawing.Color.Transparent
+        Me.btnevent.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnevent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnevent.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnevent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnevent.FillColor = System.Drawing.Color.Transparent
+        Me.btnevent.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnevent.ForeColor = System.Drawing.Color.White
+        Me.btnevent.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_events_96
+        Me.btnevent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnevent.ImageOffset = New System.Drawing.Point(20, 0)
+        Me.btnevent.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnevent.Location = New System.Drawing.Point(-22, 390)
+        Me.btnevent.Name = "btnevent"
+        Me.btnevent.Size = New System.Drawing.Size(290, 45)
+        Me.btnevent.TabIndex = 12
+        Me.btnevent.Text = "EVENTS"
+        Me.btnevent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnevent.TextOffset = New System.Drawing.Point(40, 0)
+        Me.btnevent.UseTransparentBackground = True
+        '
+        'btnstudent
+        '
+        Me.btnstudent.BackColor = System.Drawing.Color.Transparent
+        Me.btnstudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnstudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnstudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnstudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnstudent.FillColor = System.Drawing.Color.Transparent
+        Me.btnstudent.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnstudent.ForeColor = System.Drawing.Color.White
+        Me.btnstudent.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_student_registration_96
+        Me.btnstudent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnstudent.ImageOffset = New System.Drawing.Point(20, 0)
+        Me.btnstudent.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnstudent.Location = New System.Drawing.Point(-22, 339)
+        Me.btnstudent.Name = "btnstudent"
+        Me.btnstudent.Size = New System.Drawing.Size(290, 45)
+        Me.btnstudent.TabIndex = 11
+        Me.btnstudent.Text = "STUDENT"
+        Me.btnstudent.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnstudent.TextOffset = New System.Drawing.Point(40, 0)
+        Me.btnstudent.UseTransparentBackground = True
+        '
+        'btnattendance
+        '
+        Me.btnattendance.BackColor = System.Drawing.Color.Transparent
+        Me.btnattendance.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnattendance.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnattendance.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnattendance.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnattendance.FillColor = System.Drawing.Color.Transparent
+        Me.btnattendance.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnattendance.ForeColor = System.Drawing.Color.White
+        Me.btnattendance.Image = Global.EventRegistrationSystem.My.Resources.Resources.icons8_attendance_96
+        Me.btnattendance.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnattendance.ImageOffset = New System.Drawing.Point(20, 0)
+        Me.btnattendance.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnattendance.Location = New System.Drawing.Point(-22, 288)
+        Me.btnattendance.Name = "btnattendance"
+        Me.btnattendance.PressedColor = System.Drawing.Color.White
+        Me.btnattendance.Size = New System.Drawing.Size(290, 45)
+        Me.btnattendance.TabIndex = 10
+        Me.btnattendance.Text = "ATTENDANCE"
+        Me.btnattendance.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnattendance.TextOffset = New System.Drawing.Point(40, 0)
+        Me.btnattendance.UseTransparentBackground = True
+        '
+        'btnhome
+        '
+        Me.btnhome.BackColor = System.Drawing.Color.Transparent
+        Me.btnhome.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnhome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnhome.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnhome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnhome.FillColor = System.Drawing.Color.Transparent
+        Me.btnhome.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnhome.ForeColor = System.Drawing.Color.White
+        Me.btnhome.Image = Global.EventRegistrationSystem.My.Resources.Resources.round_removebg_preview
+        Me.btnhome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnhome.ImageOffset = New System.Drawing.Point(20, 0)
+        Me.btnhome.ImageSize = New System.Drawing.Size(30, 30)
+        Me.btnhome.Location = New System.Drawing.Point(-22, 237)
+        Me.btnhome.Name = "btnhome"
+        Me.btnhome.Size = New System.Drawing.Size(290, 45)
+        Me.btnhome.TabIndex = 9
+        Me.btnhome.Text = "HOME"
+        Me.btnhome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.btnhome.TextOffset = New System.Drawing.Point(40, 0)
+        Me.btnhome.UseTransparentBackground = True
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Empty
+        Me.Guna2PictureBox1.Image = Global.EventRegistrationSystem.My.Resources.Resources.menu_bg
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(268, 625)
+        Me.Guna2PictureBox1.TabIndex = 8
+        Me.Guna2PictureBox1.TabStop = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(72, 165)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(116, 38)
+        Me.Label4.TabIndex = 19
+        Me.Label4.Text = "ADMIN"
+        '
         'adminHome
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(995, 625)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Guna2PictureBox2)
+        Me.Controls.Add(Me.btnMenu)
         Me.Controls.Add(Me.Guna2ControlBox3)
         Me.Controls.Add(Me.btnlogout)
         Me.Controls.Add(Me.btnexit)
@@ -476,12 +532,14 @@ Partial Class adminHome
         Me.Text = "adminHome"
         Me.pnlhome.ResumeLayout(False)
         Me.pnlhome.PerformLayout()
+        CType(Me.data, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.data, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -512,4 +570,7 @@ Partial Class adminHome
     Friend WithEvents Student As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents btnMenu As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Label4 As Label
 End Class

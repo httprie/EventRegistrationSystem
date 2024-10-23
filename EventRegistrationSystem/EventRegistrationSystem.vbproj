@@ -67,6 +67,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
@@ -122,6 +123,18 @@
     <Compile Include="EmailForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EventsForm.Designer.vb">
+      <DependentUpon>EventsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EventsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEventsForm.Designer.vb">
+      <DependentUpon>AddEventsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddEventsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="generate.Designer.vb">
       <DependentUpon>generate.vb</DependentUpon>
     </Compile>
@@ -160,6 +173,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmailForm.resx">
       <DependentUpon>EmailForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventsForm.resx">
+      <DependentUpon>EventsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEventsForm.resx">
+      <DependentUpon>AddEventsForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generate.resx">
       <DependentUpon>generate.vb</DependentUpon>
@@ -246,6 +265,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-select-users-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
