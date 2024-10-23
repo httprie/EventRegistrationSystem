@@ -98,7 +98,7 @@ Partial Class EmailForm
         'btnsend
         '
         Me.btnsend.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnsend.Location = New System.Drawing.Point(560, 456)
+        Me.btnsend.Location = New System.Drawing.Point(560, 454)
         Me.btnsend.Name = "btnsend"
         Me.btnsend.Size = New System.Drawing.Size(94, 37)
         Me.btnsend.TabIndex = 7
@@ -129,11 +129,11 @@ Partial Class EmailForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(12, 12)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(158, 25)
+        Me.Label4.Size = New System.Drawing.Size(164, 25)
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "Email Attachment"
         '
@@ -156,7 +156,7 @@ Partial Class EmailForm
         Me.lblto.AutoSize = True
         Me.lblto.BackColor = System.Drawing.Color.White
         Me.lblto.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblto.Location = New System.Drawing.Point(149, 52)
+        Me.lblto.Location = New System.Drawing.Point(148, 52)
         Me.lblto.Name = "lblto"
         Me.lblto.Size = New System.Drawing.Size(502, 25)
         Me.lblto.TabIndex = 18
@@ -168,7 +168,7 @@ Partial Class EmailForm
         Me.lblsubject.AutoSize = True
         Me.lblsubject.BackColor = System.Drawing.Color.White
         Me.lblsubject.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblsubject.Location = New System.Drawing.Point(149, 106)
+        Me.lblsubject.Location = New System.Drawing.Point(148, 106)
         Me.lblsubject.Name = "lblsubject"
         Me.lblsubject.Size = New System.Drawing.Size(502, 25)
         Me.lblsubject.TabIndex = 19
@@ -179,8 +179,8 @@ Partial Class EmailForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(713, 528)
+        Me.BackColor = System.Drawing.Color.MidnightBlue
+        Me.ClientSize = New System.Drawing.Size(712, 528)
         Me.ControlBox = False
         Me.Controls.Add(Me.lblsubject)
         Me.Controls.Add(Me.lblto)

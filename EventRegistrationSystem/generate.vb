@@ -16,7 +16,7 @@ Public Class generate
         End If
 
         Dim gen As New QRCodeEncoder()
-        gen.QRCodeScale = 5
+        gen.QRCodeScale = 10
 
         Dim qrData As String = $"{fullname},{course},{yrsec},{studID}"
 
@@ -29,11 +29,22 @@ Public Class generate
                 MessageBox.Show("Failed to generate QR Code.")
             End If
         Catch ex As Exception
-            MessageBox.Show("An error occurred: " & ex.Message)
+            MessageBox.Show(ex.Message)
         End Try
     End Sub
 
     Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
+        Dim fullname As String = txtname.Text
+        Dim course As String = txtcourse.Text
+        Dim yrsec As String = txtyrsec.Text
+        Dim studID As String = txtstudID.Text
+        Dim email As String = txtemail.Text
+
+        If String.IsNullOrWhiteSpace(fullname) OrElse String.IsNullOrWhiteSpace(course) OrElse String.IsNullOrWhiteSpace(yrsec) OrElse String.IsNullOrWhiteSpace(studID) Then
+            MessageBox.Show("Please fill in all fields.")
+            Return
+        End If
+
         Dim save As New SaveFileDialog()
 
         save.InitialDirectory = "C:\Users\user\Documents\BASILIO\QRCode"
@@ -49,7 +60,18 @@ Public Class generate
         End If
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+    Private Sub btnsendEmail_Click(sender As Object, e As EventArgs) Handles btnsendEmail.Click
+        Dim fullname As String = txtname.Text
+        Dim course As String = txtcourse.Text
+        Dim yrsec As String = txtyrsec.Text
+        Dim studID As String = txtstudID.Text
+        Dim email As String = txtemail.Text
+
+        If String.IsNullOrWhiteSpace(fullname) OrElse String.IsNullOrWhiteSpace(course) OrElse String.IsNullOrWhiteSpace(yrsec) OrElse String.IsNullOrWhiteSpace(studID) Then
+            MessageBox.Show("Please fill in all fields.")
+            Return
+        End If
+
         Dim obj As New EmailForm
 
         obj.email = txtemail.Text
@@ -67,8 +89,6 @@ Public Class generate
         txtemail.Clear()
         txtstudID.Clear()
         QRCode.Hide()
-
-
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
