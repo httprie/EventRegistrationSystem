@@ -1,5 +1,4 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports Module1
 Public Class AddAccount
 
     Dim cmd As New MySqlCommand
@@ -14,7 +13,7 @@ Public Class AddAccount
     End Sub
 
 
-    Private Sub btnaddsave_Click(sender As Object, e As EventArgs) Handles btnaddsave.Click
+    Private Sub btnadd_Click(sender As Object, e As EventArgs) Handles btnadd.Click
         UserName = txtuname.Text
         Password = txtpwd.Text
         FullName = txtfname.Text
@@ -33,7 +32,7 @@ Public Class AddAccount
                 result = cmd.ExecuteNonQuery()
 
                 If result > 0 Then
-                    MessageBox.Show("Do you really want to add this account?", "Conformation:", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    MessageBox.Show("Do you really want to add this account?", "Confirmation:", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     MessageBox.Show("Account Added!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     ClearTextBoxes()
                 End If

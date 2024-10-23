@@ -36,7 +36,7 @@ Partial Class generate
         Me.txtcourse = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtyrsec = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtstudID = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnsendEmail = New Guna.UI2.WinForms.Guna2Button()
         Me.txtemail = New Guna.UI2.WinForms.Guna2TextBox()
         Me.timedate = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -51,7 +51,7 @@ Partial Class generate
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(105, 458)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(68, 15)
+        Me.Label1.Size = New System.Drawing.Size(105, 25)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Student ID:"
         '
@@ -62,7 +62,7 @@ Partial Class generate
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(134, 321)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(42, 15)
+        Me.Label2.Size = New System.Drawing.Size(65, 25)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Name:"
         '
@@ -73,7 +73,7 @@ Partial Class generate
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(77, 414)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(98, 15)
+        Me.Label3.Size = New System.Drawing.Size(153, 25)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Year and Section:"
         '
@@ -84,7 +84,7 @@ Partial Class generate
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(126, 366)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(46, 15)
+        Me.Label4.Size = New System.Drawing.Size(74, 25)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Course:"
         '
@@ -133,7 +133,7 @@ Partial Class generate
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(134, 506)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 15)
+        Me.Label5.Size = New System.Drawing.Size(60, 25)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Email:"
         '
@@ -225,22 +225,22 @@ Partial Class generate
         Me.txtstudID.Size = New System.Drawing.Size(442, 27)
         Me.txtstudID.TabIndex = 20
         '
-        'Guna2Button1
+        'btnsendEmail
         '
-        Me.Guna2Button1.AutoRoundedCorners = True
-        Me.Guna2Button1.BorderRadius = 16
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.FillColor = System.Drawing.Color.White
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button1.Location = New System.Drawing.Point(492, 564)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(137, 35)
-        Me.Guna2Button1.TabIndex = 22
-        Me.Guna2Button1.Text = "Send"
+        Me.btnsendEmail.AutoRoundedCorners = True
+        Me.btnsendEmail.BorderRadius = 16
+        Me.btnsendEmail.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnsendEmail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnsendEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnsendEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnsendEmail.FillColor = System.Drawing.Color.White
+        Me.btnsendEmail.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsendEmail.ForeColor = System.Drawing.Color.Black
+        Me.btnsendEmail.Location = New System.Drawing.Point(492, 564)
+        Me.btnsendEmail.Name = "btnsendEmail"
+        Me.btnsendEmail.Size = New System.Drawing.Size(137, 35)
+        Me.btnsendEmail.TabIndex = 22
+        Me.btnsendEmail.Text = "Send"
         '
         'txtemail
         '
@@ -271,7 +271,7 @@ Partial Class generate
         Me.timedate.ForeColor = System.Drawing.Color.White
         Me.timedate.Location = New System.Drawing.Point(29, 9)
         Me.timedate.Name = "timedate"
-        Me.timedate.Size = New System.Drawing.Size(76, 15)
+        Me.timedate.Size = New System.Drawing.Size(127, 25)
         Me.timedate.TabIndex = 24
         Me.timedate.Text = "                       "
         '
@@ -295,7 +295,7 @@ Partial Class generate
         Me.ClientSize = New System.Drawing.Size(753, 629)
         Me.Controls.Add(Me.timedate)
         Me.Controls.Add(Me.txtemail)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.btnsendEmail)
         Me.Controls.Add(Me.txtstudID)
         Me.Controls.Add(Me.txtyrsec)
         Me.Controls.Add(Me.txtcourse)
@@ -330,7 +330,7 @@ Partial Class generate
     Friend WithEvents txtcourse As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents txtname As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnsendEmail As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtemail As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents timedate As Label
     Friend WithEvents Timer1 As Timer

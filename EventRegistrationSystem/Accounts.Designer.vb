@@ -44,7 +44,7 @@ Partial Class Accounts
         'txtemail
         '
         Me.txtemail.AutoRoundedCorners = True
-        Me.txtemail.BorderRadius = 12
+        Me.txtemail.BorderRadius = 20
         Me.txtemail.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtemail.DefaultText = "Search"
         Me.txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -55,19 +55,19 @@ Partial Class Accounts
         Me.txtemail.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.txtemail.ForeColor = System.Drawing.Color.Gray
         Me.txtemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtemail.Location = New System.Drawing.Point(96, 96)
-        Me.txtemail.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtemail.Location = New System.Drawing.Point(76, 152)
+        Me.txtemail.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.txtemail.Name = "txtemail"
         Me.txtemail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtemail.PlaceholderText = ""
         Me.txtemail.SelectedText = ""
-        Me.txtemail.Size = New System.Drawing.Size(442, 27)
+        Me.txtemail.Size = New System.Drawing.Size(596, 42)
         Me.txtemail.TabIndex = 26
         '
         'btnaddacc
         '
         Me.btnaddacc.AutoRoundedCorners = True
-        Me.btnaddacc.BorderRadius = 17
+        Me.btnaddacc.BorderRadius = 20
         Me.btnaddacc.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.btnaddacc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btnaddacc.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -75,16 +75,17 @@ Partial Class Accounts
         Me.btnaddacc.FillColor = System.Drawing.Color.White
         Me.btnaddacc.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnaddacc.ForeColor = System.Drawing.Color.Black
-        Me.btnaddacc.Location = New System.Drawing.Point(554, 112)
+        Me.btnaddacc.Location = New System.Drawing.Point(897, 152)
+        Me.btnaddacc.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnaddacc.Name = "btnaddacc"
-        Me.btnaddacc.Size = New System.Drawing.Size(124, 36)
+        Me.btnaddacc.Size = New System.Drawing.Size(186, 42)
         Me.btnaddacc.TabIndex = 25
         Me.btnaddacc.Text = "Add New Account"
         '
         'btnsearch
         '
         Me.btnsearch.AutoRoundedCorners = True
-        Me.btnsearch.BorderRadius = 17
+        Me.btnsearch.BorderRadius = 20
         Me.btnsearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.btnsearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btnsearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -92,9 +93,10 @@ Partial Class Accounts
         Me.btnsearch.FillColor = System.Drawing.Color.White
         Me.btnsearch.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnsearch.ForeColor = System.Drawing.Color.Black
-        Me.btnsearch.Location = New System.Drawing.Point(554, 70)
+        Me.btnsearch.Location = New System.Drawing.Point(691, 152)
+        Me.btnsearch.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnsearch.Name = "btnsearch"
-        Me.btnsearch.Size = New System.Drawing.Size(124, 36)
+        Me.btnsearch.Size = New System.Drawing.Size(186, 42)
         Me.btnsearch.TabIndex = 24
         Me.btnsearch.Text = "Search"
         '
@@ -121,12 +123,13 @@ Partial Class Accounts
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.data.DefaultCellStyle = DataGridViewCellStyle3
         Me.data.GridColor = System.Drawing.Color.Gainsboro
-        Me.data.Location = New System.Drawing.Point(39, 183)
+        Me.data.Location = New System.Drawing.Point(76, 249)
+        Me.data.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.data.Name = "data"
         Me.data.RowHeadersVisible = False
         Me.data.RowHeadersWidth = 62
         Me.data.RowTemplate.Height = 28
-        Me.data.Size = New System.Drawing.Size(699, 253)
+        Me.data.Size = New System.Drawing.Size(1007, 389)
         Me.data.TabIndex = 27
         Me.data.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.data.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -158,16 +161,17 @@ Partial Class Accounts
         Me.timedate.AutoSize = True
         Me.timedate.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.timedate.ForeColor = System.Drawing.Color.White
-        Me.timedate.Location = New System.Drawing.Point(36, 21)
+        Me.timedate.Location = New System.Drawing.Point(54, 32)
+        Me.timedate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.timedate.Name = "timedate"
-        Me.timedate.Size = New System.Drawing.Size(76, 15)
+        Me.timedate.Size = New System.Drawing.Size(127, 25)
         Me.timedate.TabIndex = 28
         Me.timedate.Text = "                       "
         '
         'btnloaduser
         '
         Me.btnloaduser.AutoRoundedCorners = True
-        Me.btnloaduser.BorderRadius = 17
+        Me.btnloaduser.BorderRadius = 26
         Me.btnloaduser.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.btnloaduser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btnloaduser.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -175,18 +179,19 @@ Partial Class Accounts
         Me.btnloaduser.FillColor = System.Drawing.Color.White
         Me.btnloaduser.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnloaduser.ForeColor = System.Drawing.Color.Black
-        Me.btnloaduser.Location = New System.Drawing.Point(26, 454)
+        Me.btnloaduser.Location = New System.Drawing.Point(76, 670)
+        Me.btnloaduser.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnloaduser.Name = "btnloaduser"
-        Me.btnloaduser.Size = New System.Drawing.Size(124, 36)
+        Me.btnloaduser.Size = New System.Drawing.Size(186, 55)
         Me.btnloaduser.TabIndex = 29
         Me.btnloaduser.Text = "Load Users"
         '
         'Accounts
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(737, 590)
+        Me.ClientSize = New System.Drawing.Size(1106, 747)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnloaduser)
         Me.Controls.Add(Me.timedate)
@@ -195,6 +200,7 @@ Partial Class Accounts
         Me.Controls.Add(Me.btnaddacc)
         Me.Controls.Add(Me.btnsearch)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Accounts"
         Me.Text = "Form1"
         CType(Me.data, System.ComponentModel.ISupportInitialize).EndInit()

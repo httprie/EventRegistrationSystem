@@ -1,27 +1,24 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports Module1
 
 Public Class Accounts
 
     Dim sqlQuery As String
     Dim da As MySqlDataAdapter
     Dim dt As DataTable
-    Dim conn As New MySqlConnection
 
     Private Sub Accounts_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Timer1.Enabled = True
         DbConnect()
         LoadAccountsData()
-        Timer1.Enabled = True
     End Sub
 
     Private Sub LoadAccountsData()
     End Sub
     Private Sub btnloaduser_Click(sender As Object, e As EventArgs) Handles btnloaduser.Click
-        Dim query As String = "SELECT * FROM Accounts"
-        Dim da As New MySqlDataAdapter(query, Module1.conn)
-        Dim dt As New DataTable
-
         Try
+            sqlQuery = "SELECT * FROM Accounts"
+            da = New MySqlDataAdapter(sqlQuery, conn)
+            dt = New DataTable
             da.Fill(dt)
             data.DataSource = dt
             AddButtonsToDataGridView()
