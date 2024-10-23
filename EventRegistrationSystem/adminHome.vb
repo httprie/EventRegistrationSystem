@@ -12,7 +12,7 @@ Public Class adminHome
     End Sub
 
     Private Sub btnstudent_Click(sender As Object, e As EventArgs) Handles btnstudent.Click
-        childform(New generate())
+        childform(New GenerateQR())
     End Sub
 
     Private Sub bntlogout_Click(sender As Object, e As EventArgs) Handles btnlogout.Click
@@ -31,27 +31,15 @@ Public Class adminHome
     Private Sub btnexit_Click(sender As Object, e As EventArgs) Handles btnexit.Click
         End
     End Sub
-
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Dim s As String
-        s = Date.Now.ToString()
-        timedate.Text = s
-    End Sub
-
     Private Sub adminHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Enabled = True
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Chart1_Click(sender As Object, e As EventArgs) Handles Chart1.Click
-        Dim series1 As Series = Chart1.Series("Series 1")
-        series1.ChartType = SeriesChartType.Pie
-    End Sub
-
     Private Sub btnacc_Click(sender As Object, e As EventArgs) Handles btnacc.Click
         childform(New Accounts())
+    End Sub
+
+    Private Sub btnhome_Click(sender As Object, e As EventArgs) Handles btnhome.Click
+        childform(New AdminDashboard())
     End Sub
 End Class

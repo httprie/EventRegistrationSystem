@@ -2,7 +2,7 @@
 Public Class Login
     Dim username As String
     Dim password As String
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AcceptButton = btnLogin
         Timer1.Enabled = True
     End Sub
@@ -13,7 +13,9 @@ Public Class Login
 
         If username = "1" And password = "1" Then
             Me.Hide()
-            adminHome.Show()
+            Dim home As New adminHome()
+            home.Show()
+            home.childform(New AdminDashboard())
         ElseIf username = "" Or password = "" Then
             MessageBox.Show("Please fill in the login details.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class generate
+Partial Class GenerateQR
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -41,6 +41,7 @@ Partial Class generate
         Me.timedate = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.QRCode = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.btnclear = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.QRCode, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,7 +50,7 @@ Partial Class generate
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(105, 458)
+        Me.Label1.Location = New System.Drawing.Point(111, 461)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(105, 25)
         Me.Label1.TabIndex = 5
@@ -60,7 +61,7 @@ Partial Class generate
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(134, 321)
+        Me.Label2.Location = New System.Drawing.Point(136, 325)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(65, 25)
         Me.Label2.TabIndex = 6
@@ -71,7 +72,7 @@ Partial Class generate
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(77, 414)
+        Me.Label3.Location = New System.Drawing.Point(80, 415)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(153, 25)
         Me.Label3.TabIndex = 7
@@ -82,7 +83,7 @@ Partial Class generate
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(126, 366)
+        Me.Label4.Location = New System.Drawing.Point(129, 368)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(74, 25)
         Me.Label4.TabIndex = 8
@@ -131,7 +132,7 @@ Partial Class generate
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(134, 506)
+        Me.Label5.Location = New System.Drawing.Point(139, 512)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(60, 25)
         Me.Label5.TabIndex = 16
@@ -281,18 +282,37 @@ Partial Class generate
         'QRCode
         '
         Me.QRCode.ImageRotate = 0!
-        Me.QRCode.Location = New System.Drawing.Point(116, 48)
+        Me.QRCode.Location = New System.Drawing.Point(116, 38)
         Me.QRCode.Name = "QRCode"
         Me.QRCode.Size = New System.Drawing.Size(510, 235)
         Me.QRCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.QRCode.TabIndex = 12
         Me.QRCode.TabStop = False
         '
-        'generate
+        'btnclear
+        '
+        Me.btnclear.BackColor = System.Drawing.Color.Transparent
+        Me.btnclear.BorderColor = System.Drawing.Color.Transparent
+        Me.btnclear.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnclear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnclear.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnclear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnclear.FillColor = System.Drawing.Color.Transparent
+        Me.btnclear.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnclear.ForeColor = System.Drawing.Color.White
+        Me.btnclear.Location = New System.Drawing.Point(522, 279)
+        Me.btnclear.Name = "btnclear"
+        Me.btnclear.Size = New System.Drawing.Size(137, 35)
+        Me.btnclear.TabIndex = 25
+        Me.btnclear.Text = "Clear"
+        Me.btnclear.UseTransparentBackground = True
+        '
+        'GenerateQR
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(753, 629)
+        Me.ClientSize = New System.Drawing.Size(793, 629)
+        Me.Controls.Add(Me.btnclear)
         Me.Controls.Add(Me.timedate)
         Me.Controls.Add(Me.txtemail)
         Me.Controls.Add(Me.btnsendEmail)
@@ -309,7 +329,7 @@ Partial Class generate
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "generate"
+        Me.Name = "GenerateQR"
         Me.Text = "generate"
         CType(Me.QRCode, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -334,4 +354,5 @@ Partial Class generate
     Friend WithEvents txtemail As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents timedate As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents btnclear As Guna.UI2.WinForms.Guna2Button
 End Class

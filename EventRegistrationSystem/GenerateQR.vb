@@ -1,6 +1,6 @@
 ﻿Imports MessagingToolkit.QRCode.Codec
 Imports MessagingToolkit.QRCode.Data
-Public Class generate
+Public Class GenerateQR
 
     Private Sub btngenerate_Click(sender As Object, e As EventArgs) Handles btngenerate.Click
 
@@ -97,7 +97,16 @@ Public Class generate
         timedate.Text = s
     End Sub
 
-    Private Sub generate_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub GenerateQR_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Enabled = True
+    End Sub
+
+    Private Sub btnclear_Click(sender As Object, e As EventArgs) Handles btnclear.Click
+        txtname.Clear()
+        txtcourse.Clear()
+        txtyrsec.Clear()
+        txtstudID.Clear()
+        txtemail.Clear()
+        QRCode.Image = Nothing
     End Sub
 End Class

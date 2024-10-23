@@ -107,16 +107,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adminHome.Designer.vb">
-      <DependentUpon>adminHome.vb</DependentUpon>
+    <Compile Include="AdminHome.Designer.vb">
+      <DependentUpon>AdminHome.vb</DependentUpon>
     </Compile>
-    <Compile Include="adminHome.vb">
+    <Compile Include="AdminHome.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="attendance.Designer.vb">
-      <DependentUpon>attendance.vb</DependentUpon>
+    <Compile Include="Attendance.Designer.vb">
+      <DependentUpon>Attendance.vb</DependentUpon>
     </Compile>
-    <Compile Include="attendance.vb">
+    <Compile Include="Attendance.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EmailForm.Designer.vb">
@@ -137,10 +137,16 @@
     <Compile Include="AddAccount.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="generate.Designer.vb">
-      <DependentUpon>generate.vb</DependentUpon>
+    <Compile Include="AdminDashboard.Designer.vb">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
     </Compile>
-    <Compile Include="generate.vb">
+    <Compile Include="AdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateQR.Designer.vb">
+      <DependentUpon>GenerateQR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateQR.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.vb">
@@ -150,7 +156,7 @@
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sql connection.vb" />
+    <Compile Include="SqlConnection.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -168,11 +174,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="adminHome.resx">
-      <DependentUpon>adminHome.vb</DependentUpon>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="attendance.resx">
-      <DependentUpon>attendance.vb</DependentUpon>
+    <EmbeddedResource Include="Attendance.resx">
+      <DependentUpon>Attendance.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmailForm.resx">
       <DependentUpon>EmailForm.vb</DependentUpon>
@@ -183,8 +189,11 @@
     <EmbeddedResource Include="AddAccount.resx">
       <DependentUpon>AddAccount.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="generate.resx">
-      <DependentUpon>generate.vb</DependentUpon>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateQR.resx">
+      <DependentUpon>GenerateQR.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
